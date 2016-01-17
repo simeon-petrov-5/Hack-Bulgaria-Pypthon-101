@@ -1,0 +1,10 @@
+class Deriviative:
+	def __init__(self, equation):
+		self.equation = equation.split()
+		self.
+
+	def analysing_equation(self):
+		for char in self.equation:
+			if char == "+":
+				index = self.equation.index("+")
+				

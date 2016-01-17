@@ -1,0 +1,56 @@
+#food_diary task 4
+from datetime import datetime
+
+
+class Food_diary(object):
+	def __init__(self):
+		self._json = {}
+
+	def _get_date(self):
+		today = datetime.now()
+		return "{}.{}.{}".format(today.day, today.month, today.year)
+
+	def add_meal(self, meal):
+		date = self._get_date()
+		if date in self._json:
+			self._json[date].append(meal)
+		else:
+			self._json[date] = [meal]
+		return "Okay, it's done."
+
+	def list_meal(self, date):
+		if date in self._json:
+			return "\n".join(self._json)
+		else:
+			return "No meals from that day."
+
+
+class CLI():
+	def __init__(self, obj):
+		self.commands = {"meal": obj.add_meal, "list": obj.list_meal}
+	def _create_hello_message(self):
+		return "Hello"
+	def _create_menu_meassage(self):
+		return "Help text"
+	def start(self):
+		print(self._create_hello_message())
+		print(self._create_menu_message())
+	
+	while True:
+		console_input = input("Enter command: ")
+		try:
+			text = console_input.split()
+			command, parameter = text[0], text[1]
+			if command == "exit":
+				break
+		except:
+			print("2 arguments are expected (command and parameter")
+		print (self.commands[command](parameter))		
+
+def main():
+	diary = Food_diary()
+	interface = CLI(diary)
+	interface.start()
+
+if __name__ == "__main__":
+	main()

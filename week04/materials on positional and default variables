@@ -1,0 +1,35 @@
+def somth(*args):
+for arg in args:
+
+*args - чрез * се позволява произволен брой аргументи. 
+
+Може да се ползва заедно с позиционни аргументи! Но трябва да седи най- на края.
+def smth(variable, *arg): |OK
+def test_var_args(farg, *args):
+	print("formal arg:{}").format(farg)
+	for arg in args:
+		print("another arg: {}").format(arg)
+
+
+
+keywords - ако не се зададат данни от потребителя, се задават/взимат by default. Нещо, което всеки път е повтаряемо. При извикване на функцията default-ните стойности могат да бъдат променяни.
+
+def tomato(weight, color= "red"):
+	print("Weight: {}").format(weight)
+	print("Color: {}").format(color)
+tomato(20) |OK
+tomato(20, "yellow") |OK
+
+
+
+**kwargs - две звездички позволяват променлив брой default аргументи, нещо като речник. Отново на края!
+
+def test(farg, **kwarg):
+	print("Formal arg: {}").format(farg)
+	for key in kwargs:
+		print("another keyword arg {}:{}").format(key, kwarg[key])
+def test(farg, myarg="two", myarg2=3)
+	...
+
+
+

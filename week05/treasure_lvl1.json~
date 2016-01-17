@@ -1,0 +1,35 @@
+{"weapons": [{
+            "name": "Durin's Axe",
+            "damage": 25
+        }, {
+            "name": "Glamdring",
+            "damage": 30
+        }, {
+            "name": "The Ring",
+            "damage": 80
+        }, {
+            "name": "Orcrist",
+            "damage": 20
+        }], 
+ "spells": [{
+            "name": "Moon Whip",
+            "damage": 30
+	    "mana_cost": 20
+	    "cast_range": 2
+        }, {
+            "name": "Frost Surge",
+            "damage": 40
+	    "mana_cost": 30
+	    "cast_range": 2
+        }, {
+            "name": "Charge Soul",
+            "damage": 45
+	    "mana_cost": 35
+            "cast_range": 3
+        }, {
+            "name": "Consecration of Heaven",
+            "damage": 80
+	    "mana_cost": 50
+	    "cast_range": 3
+        }]
+}

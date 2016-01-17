@@ -1,0 +1,45 @@
+Help on module Dungeon:
+
+NNAAMMEE
+    Dungeon
+
+CCLLAASSSSEESS
+    builtins.object
+        Dungeon
+    
+    class DDuunnggeeoonn(builtins.object)
+     |  Methods defined here:
+     |  
+     |  ____iinniitt____(self)
+     |  
+     |  aannaallyyzzee__nneexxtt__sstteepp(self, direction)
+     |  
+     |  ccrreeaattee__ffrroomm__ffiillee(self, name='level1.txt')
+     |  
+     |  ccuurrrreenntt__ppoossiittiioonn(self)
+     |  
+     |  eenndd__ooff__lleevveell(self)
+     |  
+     |  mmoovvee__hheerroo(self, direction)
+     |  
+     |  ppiicckk__ttrreeaassuurree(self)
+     |  
+     |  pprriinntt__mmaapp(self)
+     |  
+     |  ssppaawwnn(self, respawn_points=2)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  ____ddiicctt____
+     |      dictionary for instance variables (if defined)
+     |  
+     |  ____wweeaakkrreeff____
+     |      list of weak references to the object (if defined)
+
+FFUUNNCCTTIIOONNSS
+    mmaaiinn()
+
+FFIILLEE
+    /home/aamitev/HackBulgaria/week05/Dungeons_and_Python/Dungeon.py
+
